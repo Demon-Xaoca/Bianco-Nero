@@ -14,11 +14,12 @@
     margin: 0;
     padding: 0;
 }
-.container {
+body {
     border-top: #af2024 solid 40px;
     background-image: url("../images/bacground.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-position: center top;
+    background-color: #3f0002;
 }
 .Picture {
     max-width: 960px;
@@ -27,7 +28,7 @@
 .logotip {
     max-width: 352px;
 }
-img[src="images/Logo.png"] {
+.Logo {
     width: 100%;
     display: block ;
 }
@@ -65,38 +66,27 @@ h1 {
     margin:0 70px 30px 74px;
     padding: 144px 257px 148px 263px;
 }
-h2, ul{
+.points, p{
     font-family: 'Arvo', sans-serif ;
     font-size: 13px;
     max-width: 562px;
-    margin: 0 auto 17px;
+    margin: auto ;
+
+}
+.points:after {
+    content: ". . . . . . . . .";
+    display: block;
+    margin: 16px 0 18px;
 }
 span {
     color: #7d7d7d;
 }
-ul li{
-    display: inline;
-}
-li {
-    list-style-type: none;
-}
-li:before {
-    content: "▖";
-}
-footer {
-    background: #000000;
-    height: 487px;
-}
-.line {
-    padding: 17px 0 17px;
-    background-color: #3f0002;
-    height: -63px;
-}
+
+
 p {
     font-size: 12px;
-    font-family: 'Arvo', sans-serif;
-    position: relative;
-    top:-90px;
-   max-width: 545px;
-    margin: auto;
+}
+footer {
+    min-height: 454px;    
+    background-color: #000;
 }
